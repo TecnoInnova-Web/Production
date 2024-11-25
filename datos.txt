@@ -1,0 +1,19 @@
+ <div>
+        <x-input-label for="autobus_id" :value="__('Autobus Id')"/>
+        <select id="autobus_id" name="autobus_id" type="text" class="mt-1 block w-full" :value="old('autobus_id', $horario?->autobus_id)" autocomplete="autobus_id" placeholder="Selecciona un Autobus">
+            @foreach($autobus as $id => $marca)
+                {{-- <option value="null">Seleciona un Conductor</option> --}}
+                <option value="{{ $id }}">{{ $marca }}</option>
+            @endforeach
+        </select>
+        <x-input-error class="mt-2" :messages="$errors->get('autobus_id')"/>
+    </div>
+    <div>
+        <x-input-label for="conductor_id" :value="__('Conductor Id')"/>
+        <select id="conductor_id" name="conductor_id" type="text" class="mt-1 block w-full" :value="old('conductor_id', $horario?->conductor_id)" autocomplete="conductor_id" placeholder="Seleciona Un Conductor">
+            @foreach($conductor as $id => $nombreCompleto)
+                <option value="{{ $id }}">{{ $nombreCompleto }}</option>
+            @endforeach
+        </select>
+        <x-input-error class="mt-2" :messages="$errors->get('conductor_id')"/>
+    </div>
