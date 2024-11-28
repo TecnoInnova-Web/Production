@@ -20,10 +20,5 @@
     <div>
         <img class="h-auto max-w-full rounded-lg" src="{{asset('img/aut6.webp')}}"  alt="">
     </div>
-    {{-- <div>
-        <img class="h-auto max-w-full rounded-lg" src="{{asset('img/aut7.webp')}}"  alt="">
-    </div>
-    <div>
-        <img class="h-auto max-w-full rounded-lg" src="{{asset('img/aut8.webp')}}"  alt="">
-    </div> --}}
+
 </div>

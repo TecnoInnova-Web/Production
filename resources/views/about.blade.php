@@ -20,47 +20,7 @@
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
-    <style>
-        .dark-mode {
-            background-color: #1a202c;
-            /* Fondo oscuro */
-            color: #f7fafc;
-            /* Texto claro */
-        }
-
-        .dark-mode a {
-            color: #63b3ed;
-            /* Enlaces claros */
-        }
-
-        .dark-mode .bg-white {
-            background-color: #2d3748;
-            /* Fondo gris oscuro */
-        }
-
-        .dark-mode .text-black {
-            color: #e2e8f0;
-            /* Texto claro en lugar de negro */
-        }
-
-        .dark-mode .bg-gray-200 {
-            background-color: #4a5568;
-            /* Fondo gris más oscuro */
-        }
-
-        .dark-mode .pregunta {
-            background-color: #2d3748;
-            color: #f7fafc;
-        }
-
-        .dark-mode .pregunta .bg-white {
-            background-color: #2d3748;
-        }
-
-        .dark-mode .pregunta .text-black {
-            color: #f7fafc;
-        }
-    </style>
+   
 </head>
 
 <body class="flex flex-col min-h-screen bg-beige">

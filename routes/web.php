@@ -16,8 +16,6 @@ Route::get('/', [PublicsController::class, 'index']);
 Route::get('/Acerca-de', [PublicsController::class, 'about'])->name('about.about');
 Route::get('/descargar-pdf', [PublicsController::class, 'descargarPDF'])->name('descargar.pdf');
 
-Route::get('/welcome', function () {
-    return view('welcome');});
 
 Route::get('/dashboard', function () {
     return view('dashboard');
